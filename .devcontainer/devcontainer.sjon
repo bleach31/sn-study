@@ -1,0 +1,6 @@
+{
+    "name": "SphinxNeeds Dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}

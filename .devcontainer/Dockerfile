@@ -1,0 +1,1 @@
+FROM danwos/sphinxneeds:latest
