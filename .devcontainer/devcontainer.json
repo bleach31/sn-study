@@ -2,5 +2,8 @@
     "name": "SphinxNeeds Dev",
     "build": {
         "dockerfile": "Dockerfile"
+    },
+    "containerEnv": {
+        "SHELL": "/bin/bash"
     }
 }
