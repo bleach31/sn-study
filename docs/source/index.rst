@@ -22,3 +22,6 @@ Contents
 
    usage
    api
+   chap18
+   chap19
+   chap20

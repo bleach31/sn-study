@@ -13,3 +13,8 @@ sphinx-build -M html docs/source/ docs/build/
 生成されたHTMLを確認するには
 cd docs/build/html
 python3 -m http.server 8000
+
+
+テーマ
+python -m pip install sphinx_rtd_theme
+python -m pip install furo
