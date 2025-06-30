@@ -42,3 +42,42 @@ html_css_files = ['custom.css']
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+needs_types = [dict(directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"),
+               dict(directive="spec", title="Specification", prefix="S_", color="#FEDCD2", style="node"),
+               dict(directive="impl", title="Implementation", prefix="I_", color="#DF744A", style="node"),
+               dict(directive="test", title="Test Case", prefix="T_", color="#DCB239", style="node"),
+               # Kept for backwards compatibility
+               dict(directive="need", title="Need", prefix="N_", color="#9856a5", style="node"),
+               # user custom types
+               {
+                   "directive": "tutorial-project",
+                   "title": "Project",
+                   "prefix": "P_",  # prefix for auto-generated IDs
+                   "style": "rectangle", # style for the type in diagrams
+                   "color": "#BFD8D2", # color for the type in diagrams
+               },
+                {
+                   "directive": "tutorial-req",
+                   "title": "Project",
+                   "prefix": "P_",  # prefix for auto-generated IDs
+                   "style": "rectangle", # style for the type in diagrams
+                   "color": "#BFD8D2", # color for the type in diagrams
+               }
+]
+
+# conf.py
+needs_extra_links = [
+   {
+      "option": "blocks",
+      "incoming": "is blocked by",
+      "outgoing": "blocks"
+   },
+   {
+      "option": "tests",
+      "incoming": "is tested by",
+      "outgoing": "tests",
+      "copy": False,
+      "color": "#00AA00"
+   }
+]
