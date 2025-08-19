@@ -66,6 +66,8 @@ needs_types = [dict(directive="req", title="Requirement", prefix="R_", color="#B
                }
 ]
 
+needs_extra_options = ['introduced', 'updated', 'impacts']
+
 # conf.py
 needs_extra_links = [
    {
